@@ -4,9 +4,9 @@ public class Contador {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Digite o primeiro parâmetro:");
+		System.out.println("Digite o primeiro parâmetro: ");
 		int parametroUm = scanner.nextInt();
-		System.out.println("Digite o segundo parâmetro:");
+		System.out.println("Digite o segundo parâmetro: ");
 		int parametroDois = scanner.nextInt();
 		
 		try {
@@ -24,8 +24,9 @@ public class Contador {
 			throw new ParametrosInvalidosException();
 	
 		int contagem = parametroDois - parametroUm;
-			for (; contagem <= parametroDois;){
-				System.out.println("Imprimindo o número: " + contagem++);
+		System.out.println("A diferença entre " + parametroUm + " e " + parametroDois + " é: " + contagem);
+			for (int i = 1 ;i <=contagem; i ++){
+				System.out.println("Imprimindo o número: " + i);
 			}
 
 	}
